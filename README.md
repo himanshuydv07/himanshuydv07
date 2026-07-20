@@ -443,7 +443,6 @@ Python  ·  CNN  ·  TensorFlow  ·  HTML  ·  CSS  ·  JavaScript
 <!-- ─────────────────────────────────────────────────────────────
      SECTION 10 · GITHUB ANALYTICS
      ───────────────────────────────────────────────────────────── -->
-
 <!-- ----------------------------------------------------------------------
      SECTION 10 · GITHUB ANALYTICS
      ---------------------------------------------------------------------- -->
@@ -458,7 +457,7 @@ Python  ·  CNN  ·  TensorFlow  ·  HTML  ·  CSS  ·  JavaScript
 
   <!-- GitHub General Stats -->
   <img 
-    src="https://github-readme-stats.vercel.app/api?username=himanshuydv07&show_icons=true&theme=tokyonight&hide_border=true" 
+    src="https://github-readme-stats.shion.dev/api?username=himanshuydv07&show_icons=true&theme=nightowl&hide_border=true" 
     alt="GitHub Stats" 
   />
 
@@ -466,7 +465,7 @@ Python  ·  CNN  ·  TensorFlow  ·  HTML  ·  CSS  ·  JavaScript
 
   <!-- GitHub Contribution Streak -->
   <img 
-    src="https://github-readme-streak-stats.herokuapp.com/?user=himanshuydv07&theme=tokyonight&hide_border=true" 
+    src="https://github-readme-streak-stats.herokuapp.com/?user=himanshuydv07&theme=nightowl&hide_border=true" 
     alt="GitHub Streak" 
   />
 
@@ -474,11 +473,13 @@ Python  ·  CNN  ·  TensorFlow  ·  HTML  ·  CSS  ·  JavaScript
 
   <!-- Top Languages -->
   <img 
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=himanshuydv07&layout=compact&theme=tokyonight&hide_border=true" 
+    src="https://github-readme-stats.shion.dev/api/top-langs/?username=himanshuydv07&layout=compact&theme=nightowl&hide_border=true" 
     alt="Top Languages" 
   />
 
 </div>
+
+<br/>
 
 <br/>
 <!-- Activity Graph -->
