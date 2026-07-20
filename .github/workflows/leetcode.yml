@@ -1,0 +1,40 @@
+# ============================================================
+# LeetCode Stats Card Generator
+# Automatically updates your LeetCode stats card every 12 hours.
+# Username: cWv1Md4JO4
+# ============================================================
+
+name: 🧠 LeetCode Stats
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+jobs:
+  update-leetcode-stats:
+    name: Update LeetCode Stats
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Download LeetCode Stats Card
+        run: |
+          mkdir -p assets
+          LEETCODE_USER="cWv1Md4JO4"
+          curl -s "https://leetcard.jacoblin.cool/${LEETCODE_USER}?theme=dark&font=JetBrains+Mono&ext=heatmap" \
+            -o assets/leetcode-stats.svg
+          echo "LeetCode stats downloaded for user: ${LEETCODE_USER}"
+
+      - name: Commit updated stats
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add assets/leetcode-stats.svg
+          git diff --staged --quiet || git commit -m "chore: update leetcode stats [skip ci]"
+          git push

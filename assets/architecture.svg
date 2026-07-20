@@ -1,0 +1,111 @@
+<svg width="700" height="300" viewBox="0 0 700 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="archBg" x1="0" y1="0" x2="700" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B1120"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad1" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0.1"/>
+    </linearGradient>
+    <style>
+      .arch-node { opacity: 0; animation: archFade 0.5s ease forwards; }
+      .arch-node:nth-child(1) { animation-delay: 0.2s; }
+      .arch-node:nth-child(2) { animation-delay: 0.5s; }
+      .arch-node:nth-child(3) { animation-delay: 0.8s; }
+      .arch-node:nth-child(4) { animation-delay: 1.1s; }
+      .arch-node:nth-child(5) { animation-delay: 1.4s; }
+      .arch-node:nth-child(6) { animation-delay: 1.7s; }
+      .arch-conn { opacity: 0; stroke-dasharray: 200; stroke-dashoffset: 200; animation: connDraw 0.8s ease forwards; }
+      .arch-conn:nth-child(1) { animation-delay: 0.4s; }
+      .arch-conn:nth-child(2) { animation-delay: 0.7s; }
+      .arch-conn:nth-child(3) { animation-delay: 1.0s; }
+      .arch-conn:nth-child(4) { animation-delay: 1.3s; }
+      .arch-conn:nth-child(5) { animation-delay: 1.6s; }
+      @keyframes archFade {
+        to { opacity: 1; }
+      }
+      @keyframes connDraw {
+        to { opacity: 1; stroke-dashoffset: 0; }
+      }
+      .data-flow { animation: flowAnim 3s ease-in-out infinite; }
+      @keyframes flowAnim {
+        0%   { stroke-dashoffset: 100; }
+        100% { stroke-dashoffset: 0; }
+      }
+    </style>
+  </defs>
+
+  <rect width="700" height="300" rx="12" fill="url(#archBg)" stroke="#1E293B" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="350" y="30" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11"
+    fill="#38BDF8" letter-spacing="2">TECH ARCHITECTURE · SYNCSHEET</text>
+
+  <!-- Connection lines -->
+  <g>
+    <!-- Client → API -->
+    <line class="arch-conn" x1="165" y1="145" x2="265" y2="145" stroke="#2563EB" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <!-- API → Firebase -->
+    <line class="arch-conn" x1="435" y1="120" x2="505" y2="100" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <!-- API → Auth -->
+    <line class="arch-conn" x1="435" y1="165" x2="505" y2="185" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <!-- Client → CDN -->
+    <line class="arch-conn" x1="165" y1="120" x2="95" y2="90" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3 3"/>
+    <!-- API → Realtime DB -->
+    <line class="arch-conn" x1="435" y1="145" x2="505" y2="145" stroke="#22C55E" stroke-width="1.5" stroke-dasharray="4 3"/>
+  </g>
+
+  <!-- Nodes -->
+  <g>
+    <!-- Client -->
+    <g class="arch-node">
+      <rect x="40" y="118" width="125" height="54" rx="8" fill="#1E293B" stroke="#2563EB" stroke-width="1.5"/>
+      <text x="102" y="140" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38BDF8">CLIENT</text>
+      <text x="102" y="158" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#94A3B8">React · TypeScript</text>
+    </g>
+
+    <!-- API Gateway / Backend -->
+    <g class="arch-node">
+      <rect x="265" y="112" width="170" height="66" rx="8" fill="#1E293B" stroke="#2563EB" stroke-width="2"/>
+      <text x="350" y="135" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38BDF8">API LAYER</text>
+      <text x="350" y="153" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#94A3B8">Firebase Functions · REST</text>
+      <text x="350" y="169" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#22C55E">Core Logic</text>
+    </g>
+
+    <!-- Firestore -->
+    <g class="arch-node">
+      <rect x="510" y="70" width="140" height="48" rx="8" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5"/>
+      <text x="580" y="90" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38BDF8">FIRESTORE</text>
+      <text x="580" y="108" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#94A3B8">Real-Time DB · NoSQL</text>
+    </g>
+
+    <!-- Auth -->
+    <g class="arch-node">
+      <rect x="510" y="162" width="140" height="48" rx="8" fill="#1E293B" stroke="#22C55E" stroke-width="1.5"/>
+      <text x="580" y="182" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#22C55E">FIREBASE AUTH</text>
+      <text x="580" y="200" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#94A3B8">Google OAuth</text>
+    </g>
+
+    <!-- CDN / Hosting -->
+    <g class="arch-node">
+      <rect x="10" y="55" width="130" height="48" rx="8" fill="#1E293B" stroke="#94A3B8" stroke-width="1"/>
+      <text x="75" y="75" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94A3B8">CDN</text>
+      <text x="75" y="93" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#64748B">Static Assets</text>
+    </g>
+
+    <!-- Realtime presence -->
+    <g class="arch-node">
+      <rect x="510" y="118" width="140" height="36" rx="8" fill="#1E293B" stroke="#38BDF8" stroke-width="1"/>
+      <text x="580" y="132" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9" fill="#38BDF8">REALTIME DB</text>
+      <text x="580" y="147" text-anchor="middle" font-family="'Inter', sans-serif" font-size="8" fill="#94A3B8">Presence Tracking</text>
+    </g>
+  </g>
+
+  <!-- Bottom label row -->
+  <text x="350" y="268" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10"
+    fill="#94A3B8" letter-spacing="1">React · TypeScript · Firebase · Tailwind CSS · Collaborative Editing</text>
+
+  <!-- Bottom accent line -->
+  <line x1="60" y1="280" x2="640" y2="280" stroke="#1E293B" stroke-width="1"/>
+</svg>

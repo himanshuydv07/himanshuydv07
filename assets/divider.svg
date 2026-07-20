@@ -1,0 +1,21 @@
+<svg width="900" height="3" viewBox="0 0 900 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="divGrad" x1="0" y1="0" x2="900" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#2563EB"/>
+      <stop offset="70%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      .div-line {
+        stroke-dasharray: 900;
+        stroke-dashoffset: 900;
+        animation: drawDiv 2s ease forwards 0.2s;
+      }
+      @keyframes drawDiv {
+        to { stroke-dashoffset: 0; }
+      }
+    </style>
+  </defs>
+  <line class="div-line" x1="0" y1="1.5" x2="900" y2="1.5" stroke="url(#divGrad)" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,59 @@
+<svg width="900" height="100" viewBox="0 0 900 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="footerBg" x1="0" y1="0" x2="0" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B1120" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0B1120"/>
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="0" y1="0" x2="900" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#2563EB" stop-opacity="0.6"/>
+      <stop offset="60%" stop-color="#38BDF8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      .wave1 { animation: waveMove 6s ease-in-out infinite; }
+      .wave2 { animation: waveMove2 8s ease-in-out infinite; }
+      .footer-text { animation: fadeUp 1s ease forwards 0.3s; opacity: 0; }
+      @keyframes waveMove {
+        0%, 100% { transform: translateX(0); }
+        50% { transform: translateX(-30px); }
+      }
+      @keyframes waveMove2 {
+        0%, 100% { transform: translateX(0); }
+        50% { transform: translateX(20px); }
+      }
+      @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(8px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+  </defs>
+
+  <rect width="900" height="100" fill="url(#footerBg)" rx="0"/>
+
+  <!-- Wave 1 -->
+  <path class="wave1" d="M-30 55 Q75 35 225 55 Q375 75 525 55 Q675 35 825 55 Q900 63 930 55 L930 100 L-30 100 Z"
+    fill="#2563EB" opacity="0.06"/>
+
+  <!-- Wave 2 -->
+  <path class="wave2" d="M-30 65 Q120 48 270 65 Q420 82 570 65 Q720 48 870 65 Q900 68 930 65 L930 100 L-30 100 Z"
+    fill="#38BDF8" opacity="0.05"/>
+
+  <!-- Accent top line -->
+  <line x1="0" y1="1" x2="900" y2="1" stroke="url(#waveGrad)" stroke-width="1"/>
+
+  <!-- Center text -->
+  <text class="footer-text" x="450" y="42" text-anchor="middle"
+    font-family="'JetBrains Mono', monospace" font-size="10" fill="#38BDF8" letter-spacing="2" opacity="0.7">
+    HIMANSHU YADAV · FULL STACK DEVELOPER · VIT BHOPAL
+  </text>
+
+  <text class="footer-text" x="450" y="62" text-anchor="middle"
+    font-family="'Inter', sans-serif" font-size="9" fill="#94A3B8" letter-spacing="1">
+    himanshuydv0007@gmail.com
+  </text>
+
+  <!-- Dot separators -->
+  <circle cx="319" cy="61" r="1.5" fill="#2563EB" opacity="0.6"/>
+  <circle cx="581" cy="61" r="1.5" fill="#2563EB" opacity="0.6"/>
+</svg>
