@@ -453,13 +453,13 @@ Python  ·  CNN  ·  TensorFlow  ·  HTML  ·  CSS  ·  JavaScript
 <div align="center">
 
 <img height="170"
-  src="https://github-readme-stats.vercel.app/api?username=himanshuydv07&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true&custom_title=GitHub+Stats&title_color=38BDF8&icon_color=2563EB&text_color=E2E8F0&bg_color=0B1120"
+  src="github-readme-stats-eight-theta.vercel.app/api?username=himanshuydv07"
   alt="GitHub Stats"/>
 
 &nbsp;
 
 <img height="170"
-  src="https://github-readme-stats.vercel.app/api/top-langs/?username=himanshuydv07&layout=compact&theme=github_dark&hide_border=true&langs_count=8&title_color=38BDF8&text_color=E2E8F0&bg_color=0B1120"
+  src="github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=himanshuydv07"
   alt="Top Languages"/>
 
 </div>
@@ -470,8 +470,8 @@ Python  ·  CNN  ·  TensorFlow  ·  HTML  ·  CSS  ·  JavaScript
 <div align="center">
 
 <img
-  src="https://github-readme-streak-stats.herokuapp.com?user=himanshuydv07&theme=github-dark-blue&hide_border=true&background=0B1120&stroke=2563EB&ring=38BDF8&fire=22C55E&currStreakLabel=E2E8F0&sideLabels=94A3B8&dates=94A3B8"
-  alt="GitHub Streak" width="500"/>
+  src="streak-stats.demolab.com?user=himanshuydv07"
+/>
 
 </div>
 
