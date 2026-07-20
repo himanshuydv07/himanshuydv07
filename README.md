@@ -444,6 +444,10 @@ Python  ·  CNN  ·  TensorFlow  ·  HTML  ·  CSS  ·  JavaScript
      SECTION 10 · GITHUB ANALYTICS
      ───────────────────────────────────────────────────────────── -->
 
+<!-- ----------------------------------------------------------------------
+     SECTION 10 · GITHUB ANALYTICS
+     ---------------------------------------------------------------------- -->
+
 <h2 align="center">
   📈&nbsp; GitHub Analytics
 </h2>
@@ -452,31 +456,31 @@ Python  ·  CNN  ·  TensorFlow  ·  HTML  ·  CSS  ·  JavaScript
 
 <div align="center">
 
-<img height="170"
-  src="github-readme-stats-eight-theta.vercel.app/api?username=himanshuydv07"
-  alt="GitHub Stats"/>
+  <!-- GitHub General Stats -->
+  <img 
+    src="https://github-readme-stats.vercel.app/api?username=himanshuydv07&show_icons=true&theme=tokyonight&hide_border=true" 
+    alt="GitHub Stats" 
+  />
 
-&nbsp;
+  <br/><br/>
 
-<img height="170"
-  src="github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=himanshuydv07"
-  alt="Top Languages"/>
+  <!-- GitHub Contribution Streak -->
+  <img 
+    src="https://github-readme-streak-stats.herokuapp.com/?user=himanshuydv07&theme=tokyonight&hide_border=true" 
+    alt="GitHub Streak" 
+  />
+
+  <br/><br/>
+
+  <!-- Top Languages -->
+  <img 
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=himanshuydv07&layout=compact&theme=tokyonight&hide_border=true" 
+    alt="Top Languages" 
+  />
 
 </div>
 
 <br/>
-
-<!-- GitHub Streak -->
-<div align="center">
-
-<img
-  src="streak-stats.demolab.com?user=himanshuydv07"
-/>
-
-</div>
-
-<br/>
-
 <!-- Activity Graph -->
 <div align="center">
 
