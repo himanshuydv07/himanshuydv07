@@ -2,7 +2,7 @@
 
 <p align="center">
   <samp>
-    My name is <em>Himanshu</em>. I am a Full Stack Developer & Cloud Architect... 
+    My name is <em>Himanshu Yadav</em>. I am a Full Stack Developer & Cyber Enthusiast... 
     <br/> Competitive Programming Enthusiast... Systems Thinking Addict. 
     <br/> Solved <em>1000+</em> algorithmic challenges across major coding platforms.
     <br/>
